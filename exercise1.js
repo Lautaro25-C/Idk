@@ -52,7 +52,7 @@ const quizQuestions = [
     ],
   },
   {
-    question: "Cuál es el símbolo químico del oro?",
+    question: "Cuál es el símbolo del oro en la tabla periódica?",
     answers: [
       { text: "Go", correct: false },
       { text: "Gd", correct: false },
