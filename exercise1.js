@@ -16,34 +16,34 @@ const progressBar = document.getElementById("progress");
 
 const quizQuestions = [
   {
-    question: "What is the capital of France?",
+    question: "Cuál de estas es la capital de Francia?",
     answers: [
-      { text: "London", correct: false },
+      { text: "Londres", correct: false },
       { text: "Berlin", correct: false },
       { text: "Paris", correct: true },
       { text: "Madrid", correct: false },
     ],
   },
   {
-    question: "Which planet is known as the Red Planet?",
+    question: "Qué planeta es conocido como el planeta rojo?",
     answers: [
       { text: "Venus", correct: false },
-      { text: "Mars", correct: true },
+      { text: "Marte", correct: true },
       { text: "Jupiter", correct: false },
-      { text: "Saturn", correct: false },
+      { text: "Saturno", correct: false },
     ],
   },
   {
-    question: "What is the largest ocean on Earth?",
+    question: "Cuál es el óceano más grande?",
     answers: [
-      { text: "Atlantic Ocean", correct: false },
-      { text: "Indian Ocean", correct: false },
-      { text: "Arctic Ocean", correct: false },
-      { text: "Pacific Ocean", correct: true },
+      { text: "Óceano Atlántico", correct: false },
+      { text: "Óceano Índico", correct: false },
+      { text: "Óceano Ártico", correct: false },
+      { text: "Óceano Pacífico", correct: true },
     ],
   },
   {
-    question: "Which of these is NOT a programming language?",
+    question: "Cuál de estos NO es un lenguaje de programación?",
     answers: [
       { text: "Java", correct: false },
       { text: "Python", correct: false },
@@ -52,7 +52,7 @@ const quizQuestions = [
     ],
   },
   {
-    question: "What is the chemical symbol for gold?",
+    question: "Cuál es el símbolo químico del oro?",
     answers: [
       { text: "Go", correct: false },
       { text: "Gd", correct: false },
@@ -147,16 +147,16 @@ function showResults() {
 
   const percentage = (score / quizQuestions.length) * 100;
   if (percentage == 100) {
-    resultMessage.textContent = "Bien ahi capo sos alto genio six seven";
+    resultMessage.textContent = "10/10, perfecto felicitaciones!";
   } else if (percentage >= 80) {
-    resultMessage.textContent = "Casi pegas todas bien ahi six seven";
+    resultMessage.textContent = "Casi perfecto, muy bien!";
   } else if (percentage >= 60) {
-    resultMessage.textContent =
-      "Podriamos haber pegado alguna mas no? six seven";
+    resultMessage.textContent = "Acertaste la mayoria, muy bien!";
   } else if (percentage >= 40) {
-    resultMessage.textContent = " jaja six seven ";
+    resultMessage.textContent = "Acertaste algunas, a mejorar!";
   } else {
-    resultMessage.textContent = "Volve a primaria, six seven";
+    resultMessage.textContent =
+      "Acertaste pocas, pero siempre se puede mejorar!";
   }
 }
 
